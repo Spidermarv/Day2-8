@@ -129,8 +129,8 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                   onPressed: () {},
                 ),
                 ServiceIcon(
-                  icon: Icons.add,
-                  label: 'Receive',
+                  icon: Icons.receipt_long,
+                  label: 'Transactions',
                   onPressed: () {},
                 ),
                 ServiceIcon(
@@ -167,7 +167,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.teal,
-        child: const Icon(Icons.menu_book_rounded, color: Colors.white),
+        child: const Icon(Icons.menu_book_outlined, color: Colors.white),
         onPressed: () {
           // Handle FAB click event
         },
