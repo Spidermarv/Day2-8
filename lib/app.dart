@@ -3,7 +3,6 @@ import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.da
 import 'blocs/servicicon.dart';
 import 'blocs/drawer.dart';
 import 'blocs/Drawerit.dart';
-import 'package:animated_icon/animated_icon.dart
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,7 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with TickerProviderStateMixin {
   int _currentIndex = 0; // Default index for home screen
-  final _pageTitles = ['Home', 'Stats', 'Transactions', 'Settings'];
+  final _pageTitles = ['Home', 'Stats', 'Transactions', 'Account'];
   late AnimationController _fabAnimationController;
   late Animation<double> _fabAnimation;
   late AnimationController _hideBottomBarAnimationController;
@@ -23,7 +22,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
     Icons.home,
     Icons.pie_chart,
     Icons.receipt,
-    Icons.settings,
+    Icons.account_circle_outlined,
   ];
 
   @override
@@ -130,8 +129,8 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                   onPressed: () {},
                 ),
                 ServiceIcon(
-                  icon: Icons.receipt_long,
-                  label: 'Transactions',
+                  icon: Icons.add,
+                  label: 'Receive',
                   onPressed: () {},
                 ),
                 ServiceIcon(

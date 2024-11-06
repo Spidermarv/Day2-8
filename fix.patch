@@ -1,0 +1,19 @@
+Subject: [PATCH] fix
+---
+Index: lib/app.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/app.dart b/lib/app.dart
+--- a/lib/app.dart	(revision b4371b2b58adce558c352a4ac58fc56cd91ef6f8)
++++ b/lib/app.dart	(date 1730914207299)
+@@ -22,7 +22,7 @@
+     Icons.home,
+     Icons.pie_chart,
+     Icons.receipt,
+-    Icons.settings,
++    Icons.account_circle_outlined,
+   ];
+ 
+   @override
